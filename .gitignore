@@ -1,15 +1,38 @@
-__pycache__/
-*.pyc
-.pytest_cache/
-.env
-*.egg-info/
-dist/
+# .gitignore
+# ignore build artifacts
 build/
-.venv/
+dist/
+*.egg-info
+*.egg
+*.pyc
+*.pyo
+*.class
+
+# ignore IDE files
+.idea/
+.vscode/
+
+# ignore logs
+logs/
+
+# ignore env files
+.env
+.env.local
+
+# ignore node_modules
 node_modules/
-target/
-bin/
-obj/
-*.o
-*.so
-*.dylib/
+
+# ignore pycache
+__pycache__/
+
+# ignore coverage reports
+coverage.xml
+coverage.py
+htmlcov/
+
+# ignore pip cache
+pip-wheel-wheelhouse/
+pip-install-*
+
+# ignore virtualenv
+venv/
