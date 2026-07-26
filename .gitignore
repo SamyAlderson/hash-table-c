@@ -1,38 +1,41 @@
-# .gitignore
-# ignore build artifacts
-build/
-dist/
-*.egg-info
-*.egg
-*.pyc
-*.pyo
-*.class
+# Ignore git directory
+.gitignore
 
-# ignore IDE files
+# Ignore node_modules and yarn.lock
+node_modules/
+yarn.lock
+
+# Ignore IDE files
 .idea/
 .vscode/
 
-# ignore logs
+# Ignore build artifacts
+build/
+
+# Ignore coverage reports
+coverage/
+
+# Ignore logs
 logs/
 
-# ignore env files
-.env
-.env.local
+# Ignore Docker volumes
+.docker/
 
-# ignore node_modules
-node_modules/
+# Ignore Docker build context
+docker-compose.yml
+docker-compose.override.yml
 
-# ignore pycache
+# Ignore macOS specific files
+.DS_Store
+
+# Ignore Windows specific files
+Thumbs.db
+
+# Ignore Linux specific files
+._*
+
+# Ignore Python cache
 __pycache__/
 
-# ignore coverage reports
-coverage.xml
-coverage.py
-htmlcov/
-
-# ignore pip cache
-pip-wheel-wheelhouse/
-pip-install-*
-
-# ignore virtualenv
-venv/
+# Ignore Python egg-info
+*.egg-info
