@@ -1,41 +1,17 @@
-# Ignore git directory
-.gitignore
-
-# Ignore node_modules and yarn.lock
-node_modules/
-yarn.lock
-
-# Ignore IDE files
-.idea/
-.vscode/
-
-# Ignore build artifacts
+# .gitignore
+# ignore build artifacts
 build/
-
-# Ignore coverage reports
-coverage/
-
-# Ignore logs
-logs/
-
-# Ignore Docker volumes
-.docker/
-
-# Ignore Docker build context
-docker-compose.yml
-docker-compose.override.yml
-
-# Ignore macOS specific files
-.DS_Store
-
-# Ignore Windows specific files
-Thumbs.db
-
-# Ignore Linux specific files
-._*
-
-# Ignore Python cache
-__pycache__/
-
-# Ignore Python egg-info
+dist/
+*.pyc
 *.egg-info
+
+# ignore IDE files
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# ignore other stuff
+*.log
+*.tmp
+*.bak
