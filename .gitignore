@@ -1,17 +1,32 @@
 # .gitignore
-# ignore build artifacts
+
+# ignore node_modules and yarn.lock for yarn
+node_modules/
+yarn.lock
+
+# ignore build and dist for static site generation
 build/
 dist/
-*.pyc
-*.egg-info
+
+# ignore .env files
+.env
+.env.local
+.env.development
+.env.production
 
 # ignore IDE files
 .idea/
-*.iml
-*.ipr
-*.iws
+.vscode/
+
+# ignore docker stuff
+docker-compose.yml
+docker-compose.override.yml
+docker-compose.local.yml
+docker-compose.dev.yml
+docker-compose.prod.yml
+docker-compose.test.yml
 
 # ignore other stuff
 *.log
 *.tmp
-*.bak
+*.backup
